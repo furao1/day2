@@ -1,0 +1,103 @@
+@import "./src/css/_minix.scss";
+@import "./src/css/common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: px2rem(44px);
+        padding: px2rem(10px);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: px2rem(14px);
+        span {
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            font-size: px2rem(16px);
+        }
+    }
+    .main {
+        width: 100%;
+        flex: 1;
+        background: rgb(235, 229, 229);
+        // padding: px2rem(10px);
+        dl {
+            width: 100%;
+            height: px2rem(100px);
+            background: #fff;
+            margin-top: px2rem(10px);
+            display: flex;
+            align-items: center;
+            padding: px2rem(10px);
+            border-bottom: px2rem(1px) solid #ccc;
+            dt {
+                width: px2rem(50px);
+                height: px2rem(50px);
+                background: rgb(235, 229, 229);
+                border-radius: px2rem(50px);
+                margin-right: px2rem(15px);
+            }
+            dd {
+                font-size: px2rem(14px);
+            }
+        }
+        ul {
+            width: 100%;
+            height: px2rem(210px);
+            padding: px2rem(10px);
+            background: #fff;
+            font-size: px2rem(14px);
+            li {
+                width: 100%;
+                height: px2rem(50px);
+                border-bottom: px2rem(1px) solid #ccc;
+                display: flex;
+                align-items: center;
+                position: relative;
+                span {
+                    width: px2rem(20px);
+                    height: px2rem(20px);
+                    background: orange;
+                    border-radius: px2rem(20px);
+                    margin-right: px2rem(15px);
+                }
+                i {
+                    position: absolute;
+                    top: 30%;
+                    right: 5%;
+                }
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: px2rem(44px);
+        background: #000;
+        display: flex;
+        padding: px2rem(10px);
+        align-items: center;
+        justify-content: space-between;
+        dl {
+            flex: 3;
+            dt {
+                font-size: px2rem(14px);
+                color: rgb(104, 102, 102);
+            }
+            dd {
+                color: rgb(54, 53, 53);
+            }
+        }
+        p {
+            width: px2rem(30px);
+            height: px2rem(30px);
+            background: rgb(104, 102, 102);
+            border-radius: px2rem(30px);
+            margin-right: px2rem(10px);
+        }
+    }
+}
